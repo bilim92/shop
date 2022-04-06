@@ -5,7 +5,8 @@ def send_confirmation_email(code, email):
     full_link = f'http://localhost:8000/account/activate/{code}'
 
     send_mail(
-        'Привет',
-        full_link,
-        [email]
+        'Привет',# title
+        full_link, # body
+        'abdyldabekovbilim@gmail.com', # from email
+        [email] # to email
     )
